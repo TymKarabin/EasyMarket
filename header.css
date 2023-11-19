@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Images/background.JPG);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    color: #c7c7c7;
+  }
+
+  .logo {
+    width: 100px;
+    cursor: pointer;
+    margin-top: 2em;
+  }
+
+  .menu-icon {
+    width: 50px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 2em;
+  }
+
+  nav {
+    flex: 1;
+    text-align: right;
+    margin-top: 2em;
+  }
+
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #c7c7c7;
+    font-size: 17px;
+  }
+
+  nav ul li a:hover {
+    color: #24262b;
+    background-color: #c7c7c7;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+  }
+
+  .col {
+    flex-basis: 50%;
+  }
+
+  .col:first-child {
+    margin-right: 20px;
+  }
+
+  .col:last-child {
+    margin-left: 4em;
+  }
+
+  .col h1 {
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .col p {
+    color: #c7c7c7;
+    font-size: 23px;
+    line-height: 26px;
+    margin-top: 1.6em;
+  }
+
+  .col button {
+    width: 200px;
+    font-size: 25px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 1.6em;
+  }
+
+  .col button a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .card {
+    width: 300px;
+    height: 270px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+  }
+
+  .card1 {
+    background-image: url(Images/pic-1.png);
+  }
+
+  .card2 {
+    background-image: url(Images/pic-2.png);
+  }
+
+  .card3 {
+    background-image: url(Images/pic-3.png);
+  }
+
+  .card4 {
+    background-image: url(Images/pic-4.png);
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  .card h5 {
+    color: #1d1d1d;
+    text-shadow: 0 0 5px #535353;
+    font-size: 23px;
+  }
+
+  .card p {
+    color: #1d1d1d;
+    text-shadow: 0 0 5px #535353;
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 1700px){
+    .container{
+      height: 100%;
+    }
+    .row{
+      display: block;
+    }
+    .col{
+      margin-top: 6em;
+    }
+    .col:first-child{
+      width: 75%;
+      align-items: center;
+      margin: auto;
+      text-align: center;
+    }
+    .col:first-child h1{
+      margin-top: 0.5em;
+    }
+    .col:first-child p{
+      text-align: left;
+      margin-left: 2em;
+      text-indent: 40px;
+    }
+    .col:first-child button{
+      margin-top: 2em;
+    }
+    .col:last-child{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px 10px;
+      padding-bottom: 6em;
+      margin-top: 3em;
+    }
+  }
+
+  @media screen and (max-width: 1290px) {
+    .navbar{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  @media screen and (max-width: 929px) {
+    .col:first-child{
+      margin-top: 6em;
+      height: 80vh;
+    }
+    .col h1 {
+      font-size: 80px;
+    }
+    .col p {
+      font-size: 18.5px;
+      margin-top: 3.5em;
+      margin-bottom: 3em;
+    }
+    .col:last-child{
+      margin-top: auto;
+      padding-top: 0;
+    }
+    .card:first-child{
+      margin-top: auto;
+    }
+    .card{
+      width: 350px;
+      height: 360px;
+      margin-top: 4em;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .col h1{
+      font-size: 60px;
+    }
+    .container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  /*
+  @media screen and (max-width: 1290px) {
+    .container{
+      align-items: center;
+      justify-content: center;
+    }
+    .col{
+      margin: 0 auto;
+      align-self: center;
+    }
+    .col:last-child{
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      margin: auto;
+      padding-right: 15px;
+      margin-top: 1em;
+      inset: 0;
+      align-self: center;
+    }
+  }
+  */
