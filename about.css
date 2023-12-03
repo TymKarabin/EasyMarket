@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Images/background.JPG);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 8.5em;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  color: #c7c7c7;
+  user-select: none;
+  padding-top: 2em;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 2em;
+}
+
+.menu-icon {
+  width: 50px;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: 2em;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin-top: 2em;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* NAV BAR STUFF */
+nav ul li a {
+    width: 100%;
+    height: match-parent;
+    /*background-color: rgb(37, 37, 37);
+    font-family: Arial;
+    color: white;*/
+    color: #dad8d8;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 24px;    
+    text-decoration: none;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+nav ul li a:hover {
+    background: #4a10e9;
+    /*border-radius: 50px;*/
+    border-left: 1px solid #4a10e9;
+    border-right: 1px solid #4a10e9;
+    transition: all .4s ease 0s;
+    color: #111;
+    font-weight: 700;
+    background-color: #c7c7c7;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+nav ul li a:active{
+    transition: 0s;
+}
+
+/* NAV BAR STUFF */
+
+.row {
+  display: block;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+.col:first-child {
+  height: 100%;
+  margin: 1.5em 2em;
+  align-items: center;
+}
+
+.col:last-child {
+  margin-top: 15em;
+}
+
+.col h1 {
+  color: #fff;
+  font-size: 85px;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.col h3 {
+  font-size: 30px;
+  font-weight: 200px;
+  color: #dad8d8;
+}
+.col p {
+  color: #c7c7c7;
+  font-size: 23px;
+  line-height: 26px;
+  margin-top: 0.7em;
+  margin-bottom: 1.5em;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-indent: 40px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.col button {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+  font-size: 25px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 1em;
+  user-select: none;
+  cursor: pointer;
+  align-self: center;
+}
+
+@media screen and (max-width: 1700px){
+  .col{
+    margin-top: 6em;
+  }
+  
+  .col h1{
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .navbar{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 1247px) {
+    .navbar{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 300px;
+      margin: 0 auto;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    nav ul li{
+      margin-left: 0;
+      display: block;
+      text-align: center;
+      margin-bottom: 3em;
+    }
+    nav ul li:first-child{
+      margin-top: 3.5em;
+    }
+    .logo{
+      padding-top: 2em;
+    }
+  }
+
+@media screen and (max-width: 929px) {
+  .col:first-child{
+    margin-top: 6em;
+    height: 80vh;
+  }
+  .col h1 {
+    font-size: 80px;
+  }
+  .col p {
+    font-size: 18.5px;
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+  }
+  .col:last-child{
+    margin-top: auto;
+    padding-top: 0;
+  }
+  .card:first-child{
+    margin-top: auto;
+  }
+  .card{
+    width: 350px;
+    height: 360px;
+    margin-top: 4em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .col h1{
+    font-size: 60px;
+  }
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
