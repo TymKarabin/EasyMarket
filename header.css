@@ -130,6 +130,7 @@ nav ul li a:active{
 .col a button {
   text-decoration: none;
   color: #000;
+  display: inline-block;
 }
 
 .card {
